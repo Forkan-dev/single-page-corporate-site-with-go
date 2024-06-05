@@ -1,0 +1,7 @@
+add migration package
+
+the schema create command is
+migrate create -ext sql -dir database/migrations -seq posts_schema
+
+the migration up command is
+migrate -path database/migrations -database "mysql://root:@tcp(127.0.0.1:3306)/test_db" up
